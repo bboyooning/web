@@ -1,0 +1,247 @@
+깃 허브(Git Hub)
+리눅스 - 개인용 유닉스
+우분투 - 윈도우 최적화된 리눅스 터미널
+
+깃허브 웹사이트 로그인 하고 거기에 저장소인(리포지토리)
+
+git.com
+
+email
+moonseonjong@naver.com
+
+name
+moonjongjs
+
+저장소인(리포지토리)
+jason
+
+moonjongjs/jason
+
+리포지토리 url
+https://github.com/moonjongjs/jason.git
+
+우분투(리눅스) - 터미널 방식으로 접근 로그인---- 임시공간(스테이징) ---업로드
+
+깃 배쉬(git bash) 실행
+윈도우 검색창 실행
+
+git bash
+
+
+1. 업로드할 저장소(jason)를 만들기 d: 또는 c:
+$ cd c:
+
+2. 업로드할 목록 보기 
+
+$ ls -la
+total 76
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  ./
+drwxr-xr-x 1 User 197121     0 Jan 12 18:08  ../
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  css/
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  fonts/
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  img/
+-rw-r--r-- 1 User 197121 42547 Jan 12 15:06  index.html
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  js/
+-rw-r--r-- 1 User 197121  2766 Jan  7 17:06 '금일 교육 내용 순서.txt'
+
+User@DESKTOP-D9SEH8N MINGW64 /c/jason
+
+3. 깃 접속 하기위해  git init  (생성)
+git init
+
+
+ls -la
+
+total 80
+drwxr-xr-x 1 User 197121     0 Jan 12 18:13  ./
+drwxr-xr-x 1 User 197121     0 Jan 12 18:08  ../
+drwxr-xr-x 1 User 197121     0 Jan 12 18:13  .git/
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  css/
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  fonts/
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  img/
+-rw-r--r-- 1 User 197121 42547 Jan 12 15:06  index.html
+drwxr-xr-x 1 User 197121     0 Jan 12 18:07  js/
+-rw-r--r-- 1 User 197121  2766 Jan  7 17:06 '금일 교육 내용 순서.txt'
+
+4. 스테이징에 올리기전에 로그인 이메일 이름
+
+User@DESKTOP-D9SEH8N MINGW64 /c/jason (master)
+$ git config --global user.email 'moonseonjong@naver.com'
+
+User@DESKTOP-D9SEH8N MINGW64 /c/jason (master)
+$ git config --global user.name 'moonjongjs'
+
+User@DESKTOP-D9SEH8N MINGW64 /c/jason (master)
+$
+
+
+5. 원격접속 remote
+
+$ git remote add origin https://github.com/moonjongjs/jason.git
+
+
+
+
+6. 그리고 접속 확인
+$ git remote -v
+origin  https://github.com/moonjongjs/jason.git (fetch)
+origin  https://github.com/moonjongjs/jason.git (push)
+
+
+
+7. 스테이징 - 업로드할 파일또는 파일들을 선택
+
+$ git add .
+
+warning: LF will be replaced by CRLF in js/lib/jquery.touchSwipe.js.
+The file will have its original line endings in your working directory
+
+
+
+
+8. 커밋하기 commit - 최종 업로드 시키기 이전 단계
+올릴 파일 이름 써 
+
+$ git commit -m 'Portfolio Jason' 
+
+
+[master (root-commit) add7562] Portfolio Jason
+ 82 files changed, 6793 insertions(+)
+ create mode 100644 css/common.css
+ create mode 100644 css/fonts.css
+ create mode 100644 css/ie7.css
+ create mode 100644 css/ie8.css
+ create mode 100644 css/response.css
+ create mode 100644 css/style.css
+ create mode 100644 fonts/dh/DINWebPro-CondBold.woff
+ create mode 100644 fonts/dh/DINWebPro-Medium.woff
+ create mode 100644 fonts/dh/DINWebPro.woff
+ create mode 100644 fonts/dh/Plantin-Italic.woff
+ create mode 100644 fonts/dh/Plantin.woff
+ create mode 100644 fonts/dh/oe-icons.eot
+ create mode 100644 fonts/dh/oe-icons.svg
+ create mode 100644 fonts/dh/oe-icons.ttf
+ create mode 100644 fonts/dh/oe-icons.woff
+ create mode 100644 fonts/et-line.eot
+ create mode 100644 fonts/et-line.svg
+ create mode 100644 fonts/et-line.ttf
+ create mode 100644 fonts/et-line.woff
+ create mode 100644 img/32019960_2PHLnsZd_20190924114537.png
+ create mode 100644 img/32019960_2cF1bjqU_20190924114600.png
+ create mode 100644 img/32019960_61emJTyH_20190924114552.png
+ create mode 100644 img/32019960_6pEBDoyO_20190924114545.png
+ create mode 100644 img/32019960_BfTpr0aE_20190924114609.png
+ create mode 100644 img/32019960_zUwG8rvi_20190924114615.png
+ create mode 100644 img/3543220167_0c7QMADs_20191029125655.png
+ create mode 100644 img/3543220167_7GI3QXf1_20191029010508.png
+ create mode 100644 img/3543220167_MIUS3zWJ_20191016024909.jpg
+ create mode 100644 img/3543220167_SpAt1Qrf_20191029114500.png
+ create mode 100644 img/3660588729_1eYMd7rh_20191010110242.jpg
+ create mode 100644 img/3660588729_2zy4qBbd_20191010021607.jpg
+ create mode 100644 img/3660588729_AtDXTNyW_20190905031209.jpeg
+ create mode 100644 img/3660588729_SePQOokU_20190905031329.jpeg
+ create mode 100644 img/3660588729_UZMRYz3E_20191008055209.jpg
+ create mode 100644 img/3660588729_aL6zK0TG_20191010020006.jpg
+ create mode 100644 img/3660588729_c1bNVYI8_20191008062208.jpg
+ create mode 100644 img/3660588729_dPcHIDbp_20190905031310 (1).jpeg
+ create mode 100644 img/3660588729_dPcHIDbp_20190905031310.jpeg
+ create mode 100644 img/3660588729_usPDe4lY_20191010105723.jpg
+ create mode 100644 img/Thumbs.db
+ create mode 100644 img/arr_down_thin.png
+ create mode 100644 img/f_logo.png
+ create mode 100644 img/gallery1.jpg
+ create mode 100644 img/gallery2.jpg
+ create mode 100644 img/gallery3.jpg
+ create mode 100644 img/gallery4.jpg
+ create mode 100644 img/gallery5.jpg
+ create mode 100644 img/gallery6.jpg
+ create mode 100644 img/gallery7.jpg
+ create mode 100644 img/gallery8.jpg
+ create mode 100644 img/gallery9.jpg
+ create mode 100644 img/insta_logo.png
+ create mode 100644 img/kakao_logo.png
+ create mode 100644 img/logo_color.png
+ create mode 100644 img/logo_white.png
+ create mode 100644 img/naver_logo_ori.png
+ create mode 100644 img/s3Slide0.jpg
+ create mode 100644 img/s3Slide1.jpg
+ create mode 100644 img/s3Slide2.jpg
+ create mode 100644 img/s4Slide1.jpg
+ create mode 100644 img/s4Slide2.jpg
+ create mode 100644 img/s4Slide3.jpg
+ create mode 100644 img/s4Slide4.jpg
+ create mode 100644 img/search_i.png
+ create mode 100644 img/search_i_01.png
+ create mode 100644 img/slide0.jpg
+ create mode 100644 img/slide1.jpg
+ create mode 100644 img/slide2.jpg
+ create mode 100644 img/slide3.jpg
+ create mode 100644 img/visu_slick_next.png
+ create mode 100644 img/visu_slick_prev.png
+ create mode 100644 index.html
+ create mode 100644 js/jason.js
+ create mode 100644 js/lib/IE9.js
+ create mode 100644 js/lib/PIE.js
+ create mode 100644 js/lib/html5shiv.min.js
+ create mode 100644 js/lib/jqPIE.js
+ create mode 100644 js/lib/jquery-1.12.4.min.js
+ create mode 100644 js/lib/jquery.easing.1.3.js
+ create mode 100644 js/lib/jquery.touchSwipe.js
+ create mode 100644 js/lib/prefixfree.min.js
+ create mode 100644 "\352\270\210\354\235\274 \352\265\220\354\234\241 \353\202\264\354\232\251 \354\210\234\354\204\234.txt"
+
+User@DESKTOP-D9SEH8N MINGW64 /c/jason (master)
+$
+
+
+
+9. 최정 업로드하기 찐! 업로드 push 
+
+$ git push origin master
+Enumerating objects: 79, done.
+Counting objects: 100% (79/79), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (79/79), done.
+Writing objects: 100% (79/79), 22.93 MiB | 5.54 MiB/s, done.
+Total 79 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/moonjongjs/jason.git
+ * [new branch]      master -> master
+
+
+10. 업로드된 깃허브 홈페이지에 리포지토리 확인하기
+
+git.com
+
+
+
+
+11. 웹페이지 설정 Settings - 클릭
+
+그리고 한참 아래로 이동
+
+
+GitHub Pages
+
+Source
+none  >> master 변경 >> save(저장)  클릭하면 1초후 화면이전환된다.
+그러면 다시 GitHub Pages 위치로 내려온다.
+그리고 웹주소를 복사한다.
+
+
+https://moonjongjs.github.io/jason
+
+
+
+
+
+
+
+
+
+
+
+
+웹페이지 url
+
+
